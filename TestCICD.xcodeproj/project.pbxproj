@@ -78,13 +78,13 @@
 		87026DAE29F92B7400B710D0 /* TestCICD */ = {
 			isa = PBXGroup;
 			children = (
-				87026DD329FA1AD200B710D0 /* TestCICD */,
 				87026DAF29F92B7400B710D0 /* AppDelegate.swift */,
 				87026DB129F92B7400B710D0 /* SceneDelegate.swift */,
 				87026DB329F92B7400B710D0 /* ViewController.swift */,
 				87026DB529F92B7400B710D0 /* Main.storyboard */,
 				87026DB829F92B7600B710D0 /* Assets.xcassets */,
 				87026DBA29F92B7600B710D0 /* LaunchScreen.storyboard */,
+				87026DBD29F92B7600B710D0 /* Info.plist */,
 			);
 			path = TestCICD;
 			sourceTree = "<group>";
@@ -95,14 +95,6 @@
 				87026DC929F92B9F00B710D0 /* TestCICDTests.swift */,
 			);
 			path = TestCICDTests;
-			sourceTree = "<group>";
-		};
-		87026DD329FA1AD200B710D0 /* TestCICD */ = {
-			isa = PBXGroup;
-			children = (
-				87026DBD29F92B7600B710D0 /* Info.plist */,
-			);
-			path = TestCICD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = TestCICD/TestCICD/Info.plist;
+				INFOPLIST_FILE = TestCICD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -355,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = TestCICD/TestCICD/Info.plist;
+				INFOPLIST_FILE = TestCICD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -375,12 +367,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestCICD/TestCICD/Info.plist;
+				INFOPLIST_FILE = TestCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = TestCICD/Info.plist;
+				INFOPLIST_PREFIX_HEADER = TestCICD/Info.plist;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = TestCICD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +398,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestCICD/TestCICD/Info.plist;
+				INFOPLIST_FILE = TestCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
