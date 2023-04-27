@@ -14,8 +14,8 @@ jobs:
       matrix:
         destination: ['platform=iOS Simulator,OS=16.2,name=iPhone 14 Pro Max']
     steps:
-      # - name: Select Xcode
-      #   run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_13.app
       - name: Checkout
         uses: actions/checkout@main
       - name: Build
