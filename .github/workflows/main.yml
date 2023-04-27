@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  Build_&_Test:
+  test:
     name: Test
     runs-on: macos-latest
     strategy:
@@ -21,6 +21,6 @@ jobs:
         env:
           destination: ${{ matrix.destination }}
       - name: Test
-        run: xcodebuild clean test -project TestCICD.xcodeproj -scheme TestCICDTests -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        run: xcodebuild clean test -project TestCICD.xcodeproj -scheme "TestCICDTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
