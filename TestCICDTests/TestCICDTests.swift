@@ -23,7 +23,7 @@ final class TestCICDTests: XCTestCase {
     }
 
     func testPerformanceExample() throws {
-        XCTAssertEqual(2 * 3, 6)
+        XCTAssertEqual(2 * 3, 7)
     }
 
 }
