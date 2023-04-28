@@ -28,6 +28,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		87026E2929FBAA0900B710D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		87026DAC29F92B7400B710D0 /* TestCICD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCICD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026DAF29F92B7400B710D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +136,7 @@
 				87026DA929F92B7400B710D0 /* Frameworks */,
 				87026DAA29F92B7400B710D0 /* Resources */,
 				87026E1629FB9E9200B710D0 /* ShellScript */,
+				87026E2929FBAA0900B710D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

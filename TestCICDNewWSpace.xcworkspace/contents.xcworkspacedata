@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Cores"
+      name = "Cores">
+      <FileRef
+         location = "group:HomeModule/HomeModule.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LogoutModule/LogoutModule.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "container:TestCICD.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -53,6 +53,17 @@
                ReferencedContainer = "container:TestCICD.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87026E3029FBACBD00B710D0"
+               BuildableName = "LoginModuleTests.xctest"
+               BlueprintName = "LoginModuleTests"
+               ReferencedContainer = "container:TestCICD.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -72,6 +83,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "87026DC629F92B9F00B710D0"
+            BuildableName = "TestCICDTests.xctest"
+            BlueprintName = "TestCICDTests"
+            ReferencedContainer = "container:TestCICD.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
