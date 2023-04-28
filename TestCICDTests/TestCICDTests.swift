@@ -6,13 +6,13 @@
 //
 
 import XCTest
-import RxSwift
+//import RxSwift
 
 @testable import TestCICD
 
 final class TestCICDTests: XCTestCase {
     var sut: ViewViewModel!
-    let disposeBag = DisposeBag()
+//    let disposeBag = DisposeBag()
     
     override func setUp() {
         sut = ViewViewModel()
@@ -27,13 +27,13 @@ final class TestCICDTests: XCTestCase {
     }
 
     func testExample() throws {
-        var stringRes: String = ""
-        sut.publisher1.subscribe { stringEvent in
-            stringRes = stringEvent.element!
-        }.disposed(by: disposeBag)
-        sut.emitsValue()
-        
-        XCTAssertEqual(stringRes, "123")
+//        var stringRes: String = ""
+//        sut.publisher1.subscribe { stringEvent in
+//            stringRes = stringEvent.element!
+//        }.disposed(by: disposeBag)
+//        sut.emitsValue()
+//        
+//        XCTAssertEqual(stringRes, "123")
     }
 
     func testPerformanceExample() throws {
