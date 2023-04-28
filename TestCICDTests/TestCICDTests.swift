@@ -33,7 +33,7 @@ final class TestCICDTests: XCTestCase {
         }.disposed(by: disposeBag)
         sut.emitsValue()
         
-        XCTAssertEqual(stringRes, "1234")
+        XCTAssertEqual(stringRes, "123")
     }
 
     func testPerformanceExample() throws {
