@@ -15,6 +15,7 @@
 		87026DBC29F92B7600B710D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87026DBA29F92B7600B710D0 /* LaunchScreen.storyboard */; };
 		87026DCA29F92B9F00B710D0 /* TestCICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026DC929F92B9F00B710D0 /* TestCICDTests.swift */; };
 		87026E1529FA7E1600B710D0 /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026E1429FA7E1600B710D0 /* ViewViewModel.swift */; };
+		87026E1829FB9F4800B710D0 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026E1729FB9F4800B710D0 /* RxSwift.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		87026DC729F92B9F00B710D0 /* TestCICDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCICDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026DC929F92B9F00B710D0 /* TestCICDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCICDTests.swift; sourceTree = "<group>"; };
 		87026E1429FA7E1600B710D0 /* ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewModel.swift; sourceTree = "<group>"; };
+		87026E1729FB9F4800B710D0 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87026E1829FB9F4800B710D0 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 		3AB0AB03B5FE8EBE89F6689A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87026E1729FB9F4800B710D0 /* RxSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 				87026DA829F92B7400B710D0 /* Sources */,
 				87026DA929F92B7400B710D0 /* Frameworks */,
 				87026DAA29F92B7400B710D0 /* Resources */,
+				87026E1629FB9E9200B710D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,6 +208,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87026E1629FB9E9200B710D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/RxSwift.xcframework/ios-arm64_armv7/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026DA829F92B7400B710D0 /* Sources */ = {
