@@ -6,13 +6,8 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		87026EB929FBB36A00B710D0 /* LogoutModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 87026EB829FBB36A00B710D0 /* LogoutModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		87026EB529FBB36A00B710D0 /* LogoutModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogoutModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87026EB829FBB36A00B710D0 /* LogoutModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoutModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +40,6 @@
 		87026EB729FBB36A00B710D0 /* LogoutModule */ = {
 			isa = PBXGroup;
 			children = (
-				87026EB829FBB36A00B710D0 /* LogoutModule.h */,
 			);
 			path = LogoutModule;
 			sourceTree = "<group>";
@@ -57,7 +51,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87026EB929FBB36A00B710D0 /* LogoutModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

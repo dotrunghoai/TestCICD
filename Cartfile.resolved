@@ -1,1 +1,8 @@
+github "Quick/Nimble" "v11.2.2"
+github "Quick/Quick" "v6.1.0"
 github "ReactiveX/RxSwift" "6.5.0"
+github "airbnb/lottie-ios" "a205eec34df7cb6155dadd93055f54349695a39c"
+github "amosavian/AMSMB2" "2.7.1"
+github "ashleymills/Reachability.swift" "v5.1.0"
+github "daltoniam/Starscream" "4.0.4"
+github "socketio/socket.io-client-swift" "v16.0.1"

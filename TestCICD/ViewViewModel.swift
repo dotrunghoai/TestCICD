@@ -5,12 +5,12 @@
 //  Created by iOS_hoai_new on 27/04/2023.
 //
 
-//import RxSwift
+import RxSwift
 
 class ViewViewModel {
-//    let publisher1 = PublishSubject<String>()
+    let publisher1 = PublishSubject<String>()
     
     func emitsValue() {
-//        publisher1.onNext("123")
+        publisher1.onNext("123")
     }
 }

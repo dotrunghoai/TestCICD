@@ -6,13 +6,8 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		87026ED12A03AA4600B710D0 /* CommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 87026ED02A03AA4600B710D0 /* CommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		87026ECD2A03AA4600B710D0 /* CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87026ED02A03AA4600B710D0 /* CommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +40,6 @@
 		87026ECF2A03AA4600B710D0 /* CommonModule */ = {
 			isa = PBXGroup;
 			children = (
-				87026ED02A03AA4600B710D0 /* CommonModule.h */,
 			);
 			path = CommonModule;
 			sourceTree = "<group>";
@@ -57,7 +51,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87026ED12A03AA4600B710D0 /* CommonModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

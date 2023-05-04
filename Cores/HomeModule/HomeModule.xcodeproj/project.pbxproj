@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87026EA529FBB34300B710D0 /* HomeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 87026EA429FBB34300B710D0 /* HomeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87026EC029FBB3D200B710D0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026EBF29FBB3D200B710D0 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87026EA129FBB34300B710D0 /* HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87026EA429FBB34300B710D0 /* HomeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
 		87026EBF29FBB3D200B710D0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +45,6 @@
 		87026EA329FBB34300B710D0 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
-				87026EA429FBB34300B710D0 /* HomeModule.h */,
 				87026EBF29FBB3D200B710D0 /* HomeViewModel.swift */,
 			);
 			path = HomeModule;
@@ -60,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87026EA529FBB34300B710D0 /* HomeModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
