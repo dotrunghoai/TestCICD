@@ -5,6 +5,9 @@
       location = "group:Cores"
       name = "Cores">
       <FileRef
+         location = "group:CommonModule/CommonModule.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:HomeModule/HomeModule.xcodeproj">
       </FileRef>
       <FileRef
