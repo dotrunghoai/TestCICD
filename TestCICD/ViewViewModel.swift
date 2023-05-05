@@ -5,10 +5,10 @@
 //  Created by iOS_hoai_new on 27/04/2023.
 //
 
-import SocketIO
+//import SocketIO
 
 class ViewViewModel {
     func emitsValue() {
-        let socket = SocketManager(socketURL: URL(string: "1")!)
+//        let socket = SocketManager(socketURL: URL(string: "1")!)
     }
 }

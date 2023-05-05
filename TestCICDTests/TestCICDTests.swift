@@ -26,13 +26,7 @@ final class TestCICDTests: XCTestCase {
     }
 
     func testExample() throws {
-//        var stringRes: String = ""
-//        sut.publisher1.subscribe { stringEvent in
-//            stringRes = stringEvent.element!
-//        }.disposed(by: disposeBag)
-//        sut.emitsValue()
-//
-//        XCTAssertEqual(stringRes, "123")
+        XCTAssertEqual(2 + 2, 4)
     }
 
     func testPerformanceExample() throws {

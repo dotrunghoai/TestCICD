@@ -15,7 +15,8 @@
 		87026DBC29F92B7600B710D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87026DBA29F92B7600B710D0 /* LaunchScreen.storyboard */; };
 		87026DCA29F92B9F00B710D0 /* TestCICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026DC929F92B9F00B710D0 /* TestCICDTests.swift */; };
 		87026E1529FA7E1600B710D0 /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026E1429FA7E1600B710D0 /* ViewViewModel.swift */; };
-		87026ED82A0485D800B710D0 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026ED72A0485D800B710D0 /* SocketIO.xcframework */; };
+		87026ED92A04DB6700B710D0 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026ED72A0485D800B710D0 /* SocketIO.xcframework */; };
+		87026EDC2A04E1C600B710D0 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026EDB2A04E1C600B710D0 /* Starscream.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +28,6 @@
 			remoteInfo = TestCICD;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		87026E2929FBAA0900B710D0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		87026DAC29F92B7400B710D0 /* TestCICD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCICD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +41,8 @@
 		87026DC729F92B9F00B710D0 /* TestCICDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCICDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026DC929F92B9F00B710D0 /* TestCICDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCICDTests.swift; sourceTree = "<group>"; };
 		87026E1429FA7E1600B710D0 /* ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewModel.swift; sourceTree = "<group>"; };
-		87026E1729FB9F4800B710D0 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 		87026ED72A0485D800B710D0 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
+		87026EDB2A04E1C600B710D0 /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87026ED82A0485D800B710D0 /* SocketIO.xcframework in Frameworks */,
+				87026EDC2A04E1C600B710D0 /* Starscream.xcframework in Frameworks */,
+				87026ED92A04DB6700B710D0 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +68,8 @@
 		3AB0AB03B5FE8EBE89F6689A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87026EDB2A04E1C600B710D0 /* Starscream.xcframework */,
 				87026ED72A0485D800B710D0 /* SocketIO.xcframework */,
-				87026E1729FB9F4800B710D0 /* RxSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,11 +99,11 @@
 				87026DAF29F92B7400B710D0 /* AppDelegate.swift */,
 				87026DB129F92B7400B710D0 /* SceneDelegate.swift */,
 				87026DB329F92B7400B710D0 /* ViewController.swift */,
+				87026E1429FA7E1600B710D0 /* ViewViewModel.swift */,
 				87026DB529F92B7400B710D0 /* Main.storyboard */,
 				87026DB829F92B7600B710D0 /* Assets.xcassets */,
 				87026DBA29F92B7600B710D0 /* LaunchScreen.storyboard */,
 				87026DBD29F92B7600B710D0 /* Info.plist */,
-				87026E1429FA7E1600B710D0 /* ViewViewModel.swift */,
 			);
 			path = TestCICD;
 			sourceTree = "<group>";
@@ -138,7 +127,6 @@
 				87026DA929F92B7400B710D0 /* Frameworks */,
 				87026DAA29F92B7400B710D0 /* Resources */,
 				87026E1629FB9E9200B710D0 /* ShellScript */,
-				87026E2929FBAA0900B710D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,7 +335,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = TestCICD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +390,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = TestCICD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -417,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
@@ -427,6 +416,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +424,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Samsung.TestCICD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
@@ -455,6 +447,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Samsung.TestCICD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
