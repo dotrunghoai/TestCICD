@@ -21,6 +21,7 @@ jobs:
       - name: CARTHAGE UPDATE
         run: carthage update --platform iOS --no-use-binaries --use-xcframeworks
       - name: RUN SCRIPT BUILD CARTHAGE
+        if: always()
         run: bash carthage-build.sh build --platform iOS --use-xcframeworks
       - name: Build
         run: xcodebuild clean build -project TestCICD.xcodeproj -scheme TestCICD -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
