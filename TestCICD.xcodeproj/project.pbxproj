@@ -16,6 +16,7 @@
 		87026DCA29F92B9F00B710D0 /* TestCICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026DC929F92B9F00B710D0 /* TestCICDTests.swift */; };
 		87026E1529FA7E1600B710D0 /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026E1429FA7E1600B710D0 /* ViewViewModel.swift */; };
 		87026E1829FB9F4800B710D0 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026E1729FB9F4800B710D0 /* RxSwift.xcframework */; };
+		87026ED82A0485D800B710D0 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026ED72A0485D800B710D0 /* SocketIO.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		87026DC929F92B9F00B710D0 /* TestCICDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCICDTests.swift; sourceTree = "<group>"; };
 		87026E1429FA7E1600B710D0 /* ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewModel.swift; sourceTree = "<group>"; };
 		87026E1729FB9F4800B710D0 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		87026ED72A0485D800B710D0 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87026ED82A0485D800B710D0 /* SocketIO.xcframework in Frameworks */,
 				87026E1829FB9F4800B710D0 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +81,7 @@
 		3AB0AB03B5FE8EBE89F6689A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87026ED72A0485D800B710D0 /* SocketIO.xcframework */,
 				87026E1729FB9F4800B710D0 /* RxSwift.xcframework */,
 			);
 			name = Frameworks;
@@ -233,6 +237,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/RxSwift.xcframework/ios-arm64_armv7/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
 			);
 			outputFileListPaths = (
 			);
