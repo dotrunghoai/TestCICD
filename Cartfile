@@ -1,5 +1,5 @@
 # github "ReactiveX/RxSwift" "6.5.0"
-github "socketio/socket.io-client-swift" ~> 15.2.0
+github "socketio/socket.io-client-swift" ~> 16.0.1
 # github "amosavian/AMSMB2"
 # github "ashleymills/Reachability.swift"
 # github "airbnb/lottie-ios" "master"
