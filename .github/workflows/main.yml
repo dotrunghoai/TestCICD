@@ -18,19 +18,16 @@ jobs:
         uses: actions/checkout@v3
       - name: Run SwiftLint
         run: echo SwiftLint running...
-      - name: CARTHAGE UPDATE
+      - name: Carthage Update
         continue-on-error: true
         run: carthage update --platform iOS --no-use-binaries --use-xcframeworks
-      - name: RUN SCRIPT BUILD CARTHAGE
-        # if: always()
+      - name: Run Script Build Carthage
         run: bash carthage-build.sh build --platform iOS --use-xcframeworks
       - name: Build
-        # if: always()
         run: xcodebuild clean build -project TestCICD.xcodeproj -scheme TestCICD -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
       - name: Test
-        # if: always()
         run: xcodebuild clean test -project TestCICD.xcodeproj -scheme "TestCICDTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
