@@ -6,7 +6,8 @@
 //
 
 import RxSwift
+import SocketIO
 
 class HomeViewModel {
-    
+    let socketManager = SocketManager(socketURL: URL(string: "1")!)
 }
