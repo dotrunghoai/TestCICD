@@ -1,14 +1,31 @@
-name: CI
+name: CI-CD
 
 on:
   workflow_dispatch:
-  
+
 jobs:
-  build:
+  test:
+    name: Test
     runs-on: macos-latest
-
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=16.2,name=iPhone 14 Pro Max']
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run SwiftLint
+        run: echo SwiftLint running...
+      - name: Carthage Update
+        continue-on-error: true
+        run: carthage update --platform iOS --no-use-binaries --use-xcframeworks
+      - name: Run Script Build Carthage
+        run: bash carthage-build.sh build --platform iOS --use-xcframeworks
+      - name: Build
+        run: xcodebuild clean build -project TestCICD.xcodeproj -scheme TestCICD -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        env:
+          destination: ${{ matrix.destination }}
+      - name: Test
+        run: xcodebuild clean test -project TestCICD.xcodeproj -scheme "TestCICDTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        env:
+          destination: ${{ matrix.destination }}
 
-      - name: greet
-        run: echo "Default"
