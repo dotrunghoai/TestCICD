@@ -1,4 +1,4 @@
-name: CI
+name: CI-CD
 
 on:
   workflow_dispatch:
@@ -15,4 +15,4 @@ jobs:
 
       - name: greet
         run: |
-          echo "boolean is ${{ github.event.inputs.isRelease }}"
+          echo "isRelease is ${{ github.event.inputs.isRelease }}"
