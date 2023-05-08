@@ -1,4 +1,4 @@
-name: CI-CD ${GITHUB_REF##*/}
+name: CI-CD
 
 on:
   workflow_dispatch:
