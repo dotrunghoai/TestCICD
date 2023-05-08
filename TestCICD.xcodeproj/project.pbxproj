@@ -17,6 +17,9 @@
 		87026E1529FA7E1600B710D0 /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026E1429FA7E1600B710D0 /* ViewViewModel.swift */; };
 		87026ED92A04DB6700B710D0 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026ED72A0485D800B710D0 /* SocketIO.xcframework */; };
 		87026EDC2A04E1C600B710D0 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026EDB2A04E1C600B710D0 /* Starscream.xcframework */; };
+		87026EEA2A08FFA100B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026EE92A08FFA100B710D0 /* ReplayKit.framework */; };
+		87026EED2A08FFA200B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026EEC2A08FFA200B710D0 /* SampleHandler.swift */; };
+		87026EF12A08FFA200B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026EE82A08FFA100B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +30,28 @@
 			remoteGlobalIDString = 87026DAB29F92B7400B710D0;
 			remoteInfo = TestCICD;
 		};
+		87026EEF2A08FFA200B710D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87026DA429F92B7400B710D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87026EE72A08FFA100B710D0;
+			remoteInfo = FlipMobileUploadExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87026EF62A08FFA200B710D0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87026EF12A08FFA200B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		87026DAC29F92B7400B710D0 /* TestCICD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCICD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +70,10 @@
 		87026EDE2A08A67F00B710D0 /* Debug123.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug123.xcconfig; sourceTree = "<group>"; };
 		87026EDF2A08A6F100B710D0 /* AppStore789.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore789.xcconfig; sourceTree = "<group>"; };
 		87026EE02A08AC4400B710D0 /* Test456.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test456.xcconfig; sourceTree = "<group>"; };
+		87026EE82A08FFA100B710D0 /* FlipMobileUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlipMobileUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87026EE92A08FFA100B710D0 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		87026EEC2A08FFA200B710D0 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		87026EEE2A08FFA200B710D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87026EE52A08FFA100B710D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87026EEA2A08FFA100B710D0 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +109,7 @@
 			children = (
 				87026EDB2A04E1C600B710D0 /* Starscream.xcframework */,
 				87026ED72A0485D800B710D0 /* SocketIO.xcframework */,
+				87026EE92A08FFA100B710D0 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +120,7 @@
 				87026EDD2A08A60A00B710D0 /* Config */,
 				87026DAE29F92B7400B710D0 /* TestCICD */,
 				87026DC829F92B9F00B710D0 /* TestCICDTests */,
+				87026EEB2A08FFA200B710D0 /* FlipMobileUploadExtension */,
 				87026DAD29F92B7400B710D0 /* Products */,
 				3AB0AB03B5FE8EBE89F6689A /* Frameworks */,
 			);
@@ -93,6 +131,7 @@
 			children = (
 				87026DAC29F92B7400B710D0 /* TestCICD.app */,
 				87026DC729F92B9F00B710D0 /* TestCICDTests.xctest */,
+				87026EE82A08FFA100B710D0 /* FlipMobileUploadExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +169,15 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		87026EEB2A08FFA200B710D0 /* FlipMobileUploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				87026EEC2A08FFA200B710D0 /* SampleHandler.swift */,
+				87026EEE2A08FFA200B710D0 /* Info.plist */,
+			);
+			path = FlipMobileUploadExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +189,12 @@
 				87026DA929F92B7400B710D0 /* Frameworks */,
 				87026DAA29F92B7400B710D0 /* Resources */,
 				87026E1629FB9E9200B710D0 /* ShellScript */,
+				87026EF62A08FFA200B710D0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87026EF02A08FFA200B710D0 /* PBXTargetDependency */,
 			);
 			name = TestCICD;
 			productName = TestCICD;
@@ -169,6 +219,23 @@
 			productReference = 87026DC729F92B9F00B710D0 /* TestCICDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		87026EE72A08FFA100B710D0 /* FlipMobileUploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87026EF22A08FFA200B710D0 /* Build configuration list for PBXNativeTarget "FlipMobileUploadExtension" */;
+			buildPhases = (
+				87026EE42A08FFA100B710D0 /* Sources */,
+				87026EE52A08FFA100B710D0 /* Frameworks */,
+				87026EE62A08FFA100B710D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipMobileUploadExtension;
+			productName = FlipMobileUploadExtension;
+			productReference = 87026EE82A08FFA100B710D0 /* FlipMobileUploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +252,9 @@
 					87026DC629F92B9F00B710D0 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 87026DAB29F92B7400B710D0;
+					};
+					87026EE72A08FFA100B710D0 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -203,6 +273,7 @@
 			targets = (
 				87026DAB29F92B7400B710D0 /* TestCICD */,
 				87026DC629F92B9F00B710D0 /* TestCICDTests */,
+				87026EE72A08FFA100B710D0 /* FlipMobileUploadExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +290,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		87026DC529F92B9F00B710D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87026EE62A08FFA100B710D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87026EE42A08FFA100B710D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87026EED2A08FFA200B710D0 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -275,6 +361,11 @@
 			isa = PBXTargetDependency;
 			target = 87026DAB29F92B7400B710D0 /* TestCICD */;
 			targetProxy = 87026DCB29F92B9F00B710D0 /* PBXContainerItemProxy */;
+		};
+		87026EF02A08FFA200B710D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87026EE72A08FFA100B710D0 /* FlipMobileUploadExtension */;
+			targetProxy = 87026EEF2A08FFA200B710D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87026EDE2A08A67F00B710D0 /* Debug123.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -452,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87026EDF2A08A6F100B710D0 /* AppStore789.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -584,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87026EE02A08AC4400B710D0 /* Test456.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -631,6 +725,87 @@
 			};
 			name = Test;
 		};
+		87026EF32A08FFA200B710D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X6R656Z24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlipMobileUploadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlipMobileUploadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Samsung.TestCICD.FlipMobileUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87026EF42A08FFA200B710D0 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X6R656Z24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlipMobileUploadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlipMobileUploadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Samsung.TestCICD.FlipMobileUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		87026EF52A08FFA200B710D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X6R656Z24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlipMobileUploadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlipMobileUploadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Samsung.TestCICD.FlipMobileUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -660,6 +835,16 @@
 				87026DCE29F92B9F00B710D0 /* Debug */,
 				87026EE32A08AC6700B710D0 /* Test */,
 				87026DCF29F92B9F00B710D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87026EF22A08FFA200B710D0 /* Build configuration list for PBXNativeTarget "FlipMobileUploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87026EF32A08FFA200B710D0 /* Debug */,
+				87026EF42A08FFA200B710D0 /* Test */,
+				87026EF52A08FFA200B710D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
