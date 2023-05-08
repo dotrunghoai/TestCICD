@@ -1,7 +1,5 @@
 name: CI-CD
-id: branch-name
-uses: ${GITHUB_REF##*/}
-run-name: Run Unit Test / UI Test on ${{ inputs.branch }} branch "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
+run-name: Run Unit Test / UI Test on $NAME
 
 on:
   workflow_dispatch:
