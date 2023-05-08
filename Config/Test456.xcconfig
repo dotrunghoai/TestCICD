@@ -1,0 +1,11 @@
+//
+//  Test456.xcconfig
+//  TestCICD
+//
+//  Created by iOS_hoai_new on 08/05/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Tên app thứ 2 tester
