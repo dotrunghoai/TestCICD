@@ -3,7 +3,7 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      boolean:
+      isRelease:
         type: boolean
         description: is Release to TestFlight
 jobs:
@@ -15,4 +15,4 @@ jobs:
 
       - name: greet
         run: |
-          echo "boolean is ${{ github.event.inputs.boolean }}"
+          echo "boolean is ${{ github.event.inputs.isRelease }}"
