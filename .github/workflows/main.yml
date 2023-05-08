@@ -1,5 +1,5 @@
 name: CI-CD
-run-name: Run Unit Test / UI Test on ${GITHUB_REF##*/}
+run-name: Run Unit Test / UI Test on ${{ GITHUB_REF##*/ }} branch
 
 on:
   workflow_dispatch:
