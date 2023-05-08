@@ -33,6 +33,6 @@ jobs:
         env:
           destination: ${{ matrix.destination }}
       - name: Archive
-        if: ${{ input.isRelease }}
-        run: echo ${{ input.isRelease }}
+        if: ${{ inputs.isRelease }}
+        run: echo ${{ inputs.isRelease }}
 
