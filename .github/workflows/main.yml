@@ -15,5 +15,4 @@ jobs:
 
       - name: greet
         run: |
-          echo "boolean is ${{ github.event.inputs.boolean }}" / ${{ inputs.boolean }} 
-          echo "choice is ${{ github.event.inputs.choice }}" / ${{ inputs.choice }}
+          echo "boolean is ${{ github.event.inputs.boolean }}"
